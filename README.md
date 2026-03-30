@@ -1,7 +1,7 @@
 # supplementary-material
 
 <p align="center">
-  <img src="figs/solve_time_half_violin.png" width="75%">
+  <img src="figs/solve_time_half_violin.png" style="width:50%; max-width:800px;">
 </p>
 
 <p align="center">
