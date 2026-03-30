@@ -129,7 +129,7 @@
   </tbody>
 </table>
 
-<p align="center" style="font-size:13px; color:#444;">
+<p align="center" style="font-size:10px; color:#444;">
   <b>Table 2.</b>
   Pre-AC power flow constraint violations (↓) under stochastic demand perturbations.
   All active and reactive loads are independently perturbed with Gaussian noise (σ = 0.05).
@@ -222,7 +222,7 @@
   </tbody>
 </table>
 
-<p align="center" style="font-size:13px; color:#444;">
+<p align="center" style="font-size:10px; color:#444;">
   <b>Table 3.</b>
   Post-AC power flow (closed-loop evaluation) feasibility under fixed demand.
   For each test instance, predicted generator active power <i>P<sub>g</sub></i> (excluding slack) and voltage magnitude <i>V</i> (at generator and slack buses) are injected into an AC power flow solver, which solves for <i>Q<sub>g</sub></i> and <i>V<sub>a</sub></i> while adjusting slack <i>P<sub>g</sub></i>.
