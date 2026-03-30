@@ -137,24 +137,32 @@
   For each realization, we record the maximum violation across all buses or branches, and report the average of these maxima across realizations.
 </p>
 
+<p align="center" style="font-size:13px; color:#444;">
+  <b>Table 2.</b>
+  Pre-AC power flow constraint violations (↓) under stochastic demand perturbations.
+  All active and reactive loads are independently perturbed with Gaussian noise (σ = 0.05).
+  For each test instance, we evaluate model outputs and AC-OPF (IPOPT) solutions over multiple stochastic realizations.
+  For each realization, we record the maximum violation across all buses or branches, and report the average of these maxima across realizations.
+</p>
+
 <table>
   <thead>
     <tr>
       <th>Metric</th>
-      <th>PEGASE1354 GNN</th>
-      <th>PEGASE1354 GNN + Constraint</th>
-      <th>PEGASE1354 Ours Mean</th>
-      <th>PEGASE1354 Ours Best</th>
-      <th>PEGASE1354 Ours + guide Mean</th>
-      <th>PEGASE1354 Ours + guide Best</th>
-      <th>PEGASE1354 AC-OPF</th>
-      <th>RTE1888 GNN</th>
-      <th>RTE1888 GNN + Constraint</th>
-      <th>RTE1888 Ours Mean</th>
-      <th>RTE1888 Ours Best</th>
-      <th>RTE1888 Ours + guide Mean</th>
-      <th>RTE1888 Ours + guide Best</th>
-      <th>RTE1888 AC-OPF</th>
+      <th>PEGASE1354<br>GNN</th>
+      <th>PEGASE1354<br>GNN + Constraint</th>
+      <th>PEGASE1354<br>Ours<br>Mean</th>
+      <th>PEGASE1354<br>Ours<br>Best</th>
+      <th>PEGASE1354<br>Ours + guide<br>Mean</th>
+      <th>PEGASE1354<br>Ours + guide<br>Best</th>
+      <th>PEGASE1354<br>AC-OPF</th>
+      <th>RTE1888<br>GNN</th>
+      <th>RTE1888<br>GNN + Constraint</th>
+      <th>RTE1888<br>Ours<br>Mean</th>
+      <th>RTE1888<br>Ours<br>Best</th>
+      <th>RTE1888<br>Ours + guide<br>Mean</th>
+      <th>RTE1888<br>Ours + guide<br>Best</th>
+      <th>RTE1888<br>AC-OPF</th>
     </tr>
   </thead>
   <tbody>
@@ -184,22 +192,30 @@
   For DC-OPF, we fix <i>V</i> = 1 and evaluate its dispatch using the same ACPF procedure.
 </p>
 
+<p align="center" style="font-size:13px; color:#444;">
+  <b>Table 3.</b>
+  Post-AC power flow (closed-loop evaluation) feasibility under fixed demand.
+  For each test instance, predicted generator active power <i>P<sub>g</sub></i> (excluding slack) and voltage magnitude <i>V</i> are injected into an AC power flow solver, which solves for <i>Q<sub>g</sub></i> and <i>V<sub>a</sub></i> while adjusting slack <i>P<sub>g</sub></i>.
+  This enforces nodal power balance by construction. We report PF convergence rate (↑) and post-ACPF violation metrics (↓).
+  For DC-OPF, we fix <i>V</i> = 1 and evaluate its dispatch using the same ACPF procedure.
+</p>
+
 <table>
   <thead>
     <tr>
       <th>Metric</th>
-      <th>PEGASE1354 GNN + Constraint</th>
-      <th>PEGASE1354 Ours Mean</th>
-      <th>PEGASE1354 Ours Best</th>
-      <th>PEGASE1354 Ours + guide Mean</th>
-      <th>PEGASE1354 Ours + guide Best</th>
-      <th>PEGASE1354 DC-OPF</th>
-      <th>RTE1888 GNN + Constraint</th>
-      <th>RTE1888 Ours Mean</th>
-      <th>RTE1888 Ours Best</th>
-      <th>RTE1888 Ours + guide Mean</th>
-      <th>RTE1888 Ours + guide Best</th>
-      <th>RTE1888 DC-OPF</th>
+      <th>PEGASE1354<br>GNN + Constraint</th>
+      <th>PEGASE1354<br>Ours<br>Mean</th>
+      <th>PEGASE1354<br>Ours<br>Best</th>
+      <th>PEGASE1354<br>Ours + guide<br>Mean</th>
+      <th>PEGASE1354<br>Ours + guide<br>Best</th>
+      <th>PEGASE1354<br>DC-OPF</th>
+      <th>RTE1888<br>GNN + Constraint</th>
+      <th>RTE1888<br>Ours<br>Mean</th>
+      <th>RTE1888<br>Ours<br>Best</th>
+      <th>RTE1888<br>Ours + guide<br>Mean</th>
+      <th>RTE1888<br>Ours + guide<br>Best</th>
+      <th>RTE1888<br>DC-OPF</th>
     </tr>
   </thead>
   <tbody>
