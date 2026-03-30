@@ -137,30 +137,6 @@
   For each realization, we record the maximum violation across all buses or branches, and report the average of these maxima across realizations.
 </p>
 
-<p align="center" style="font-size:13px; color:#444;">
-  <b>Table 2.</b>
-  Pre-AC power flow constraint violations (↓) under stochastic demand perturbations.
-  All active and reactive loads are independently perturbed with Gaussian noise (σ = 0.05).
-  For each test instance, we evaluate model outputs and AC-OPF (IPOPT) solutions over multiple stochastic realizations.
-  For each realization, we record the maximum violation across all buses or branches, and report the average of these maxima across realizations.
-</p>
-
-<p align="center" style="font-size:13px; color:#444;">
-  <b>Table 3.</b>
-  Post-AC power flow (closed-loop evaluation) feasibility under fixed demand.
-  For each test instance, predicted generator active power <i>P<sub>g</sub></i> (excluding slack) and voltage magnitude <i>V</i> are injected into an AC power flow solver, which solves for <i>Q<sub>g</sub></i> and <i>V<sub>a</sub></i> while adjusting slack <i>P<sub>g</sub></i>.
-  This enforces nodal power balance by construction. We report PF convergence rate (↑) and post-ACPF violation metrics (↓).
-  For DC-OPF, we fix <i>V</i> = 1 and evaluate its dispatch using the same ACPF procedure.
-</p>
-
-<p align="center" style="font-size:13px; color:#444;">
-  <b>Table 2.</b>
-  Pre-AC power flow constraint violations (↓) under stochastic demand perturbations.
-  All active and reactive loads are independently perturbed with Gaussian noise (σ = 0.05).
-  For each test instance, we evaluate model outputs and AC-OPF (IPOPT) solutions over multiple stochastic realizations.
-  For each realization, we record the maximum violation across all buses or branches, and report the average of these maxima across realizations.
-</p>
-
 <table>
   <thead>
     <tr>
