@@ -38,43 +38,77 @@ For our method, both mean and Best@K results are reported. Best@K is selected vi
 </p>
 
 <table align="center">
+  <!-- 顶层系统 -->
   <tr>
-    <th rowspan="2"> </th>
+    <th rowspan="3"></th>
     <th colspan="6">PEGASE1354 × 10<sup>−2</sup></th>
     <th colspan="6">RTE1888</th>
   </tr>
+
+  <!-- 方法层 -->
   <tr>
-    <th>GNN</th>
-    <th>GNN + Constraint</th>
-    <th>Ours Mean</th>
-    <th>Ours Best</th>
-    <th>Ours + guide Mean</th>
-    <th>Ours + guide Best</th>
-    <th>GNN</th>
-    <th>GNN + Constraint</th>
-    <th>Ours Mean</th>
-    <th>Ours Best</th>
-    <th>Ours + guide Mean</th>
-    <th>Ours + guide Best</th>
+    <th rowspan="2">GNN</th>
+    <th rowspan="2">GNN + Constraint</th>
+    <th colspan="2">Ours</th>
+    <th colspan="2">Ours + guide</th>
+
+    <th rowspan="2">GNN</th>
+    <th rowspan="2">GNN + Constraint</th>
+    <th colspan="2">Ours</th>
+    <th colspan="2">Ours + guide</th>
   </tr>
+
+  <!-- Mean / Best 层 -->
+  <tr>
+    <th>Mean</th><th>Best</th>
+    <th>Mean</th><th>Best</th>
+
+    <th>Mean</th><th>Best</th>
+    <th>Mean</th><th>Best</th>
+  </tr>
+
+  <!-- 数据 -->
   <tr>
     <td><i>V</i></td>
-    <td>0.227</td><td>0.242</td><td>0.201</td><td>0.130</td><td>0.201</td><td>0.130</td>
-    <td>0.00212</td><td>0.00433</td><td>0.00251</td><td>0.00103</td><td>0.00251</td><td>0.00102</td>
+    <td>0.227</td><td>0.242</td>
+    <td>0.201</td><td>0.130</td>
+    <td>0.201</td><td>0.130</td>
+
+    <td>0.00212</td><td>0.00433</td>
+    <td>0.00251</td><td>0.00103</td>
+    <td>0.00251</td><td>0.00102</td>
   </tr>
+
   <tr>
     <td>θ</td>
-    <td>0.705</td><td>0.849</td><td>0.867</td><td>0.559</td><td>0.867</td><td>0.559</td>
-    <td>0.0531</td><td>0.1289</td><td>0.1098</td><td>0.0132</td><td>0.1100</td><td>0.0131</td>
+    <td>0.705</td><td>0.849</td>
+    <td>0.867</td><td>0.559</td>
+    <td>0.867</td><td>0.559</td>
+
+    <td>0.0531</td><td>0.1289</td>
+    <td>0.1098</td><td>0.0132</td>
+    <td>0.1100</td><td>0.0131</td>
   </tr>
+
   <tr>
     <td><i>P<sub>g</sub></i></td>
-    <td>2.621</td><td>4.388</td><td>2.368</td><td>1.609</td><td>2.368</td><td>1.609</td>
-    <td>0.121</td><td>0.269</td><td>0.225</td><td>0.0321</td><td>0.225</td><td>0.0320</td>
+    <td>2.621</td><td>4.388</td>
+    <td>2.368</td><td>1.609</td>
+    <td>2.368</td><td>1.609</td>
+
+    <td>0.121</td><td>0.269</td>
+    <td>0.225</td><td>0.0321</td>
+    <td>0.225</td><td>0.0320</td>
   </tr>
+
   <tr>
     <td><i>Q<sub>g</sub></i></td>
-    <td>5.369</td><td>6.997</td><td>5.674</td><td>3.641</td><td>5.674</td><td>3.641</td>
-    <td>0.0525</td><td>0.0928</td><td>0.0857</td><td>0.0233</td><td>0.0858</td><td>0.0232</td>
+    <td>5.369</td><td>6.997</td>
+    <td>5.674</td><td>3.641</td>
+    <td>5.674</td><td>3.641</td>
+
+    <td>0.0525</td><td>0.0928</td>
+    <td>0.0857</td><td>0.0233</td>
+    <td>0.0858</td><td>0.0232</td>
   </tr>
 </table>
