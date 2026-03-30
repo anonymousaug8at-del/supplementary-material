@@ -128,3 +128,105 @@
     </tr>
   </tbody>
 </table>
+
+<p align="center" style="font-size:13px; color:#444;">
+  <b>Table 2.</b>
+  Pre-AC power flow constraint violations (↓) under stochastic demand perturbations.
+  All active and reactive loads are independently perturbed with Gaussian noise (σ = 0.05).
+  For each test instance, we evaluate model outputs and AC-OPF (IPOPT) solutions over multiple stochastic realizations.
+  For each realization, we record the maximum violation across all buses or branches, and report the average of these maxima across realizations.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>PEGASE1354 GNN</th>
+      <th>PEGASE1354 GNN + Constraint</th>
+      <th>PEGASE1354 Ours Mean</th>
+      <th>PEGASE1354 Ours Best</th>
+      <th>PEGASE1354 Ours + guide Mean</th>
+      <th>PEGASE1354 Ours + guide Best</th>
+      <th>PEGASE1354 AC-OPF</th>
+      <th>RTE1888 GNN</th>
+      <th>RTE1888 GNN + Constraint</th>
+      <th>RTE1888 Ours Mean</th>
+      <th>RTE1888 Ours Best</th>
+      <th>RTE1888 Ours + guide Mean</th>
+      <th>RTE1888 Ours + guide Best</th>
+      <th>RTE1888 AC-OPF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P-balance</td>
+      <td>113.33</td><td>2.707</td><td>7.126</td><td>4.345</td><td>1.787</td><td>1.934</td><td>1.825</td>
+      <td>489.41</td><td>5.191</td><td>82.55</td><td>23.55</td><td>1.576</td><td>1.204</td><td>0.883</td>
+    </tr>
+    <tr>
+      <td>Q-balance</td>
+      <td>37.63</td><td>1.587</td><td>2.284</td><td>1.439</td><td>0.868</td><td>0.570</td><td>0.378</td>
+      <td>165.96</td><td>6.153</td><td>16.77</td><td>6.947</td><td>2.492</td><td>1.514</td><td>0.389</td>
+    </tr>
+    <tr>
+      <td>Thermal</td>
+      <td>1934.2</td><td>0.436</td><td>54.29</td><td>12.04</td><td>1.478</td><td>0.354</td><td>0.00044</td>
+      <td>103410</td><td>0.204</td><td>5391.0</td><td>248.36</td><td>3.044</td><td>0.316</td><td>0.000038</td>
+    </tr>
+  </tbody>
+</table>
+
+<p align="center" style="font-size:13px; color:#444;">
+  <b>Table 3.</b>
+  Post-AC power flow (closed-loop evaluation) feasibility under fixed demand.
+  For each test instance, predicted generator active power <i>P<sub>g</sub></i> (excluding slack) and voltage magnitude <i>V</i> are injected into an AC power flow solver, which solves for <i>Q<sub>g</sub></i> and <i>V<sub>a</sub></i> while adjusting slack <i>P<sub>g</sub></i>.
+  This enforces nodal power balance by construction. We report PF convergence rate (↑) and post-ACPF violation metrics (↓).
+  For DC-OPF, we fix <i>V</i> = 1 and evaluate its dispatch using the same ACPF procedure.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>PEGASE1354 GNN + Constraint</th>
+      <th>PEGASE1354 Ours Mean</th>
+      <th>PEGASE1354 Ours Best</th>
+      <th>PEGASE1354 Ours + guide Mean</th>
+      <th>PEGASE1354 Ours + guide Best</th>
+      <th>PEGASE1354 DC-OPF</th>
+      <th>RTE1888 GNN + Constraint</th>
+      <th>RTE1888 Ours Mean</th>
+      <th>RTE1888 Ours Best</th>
+      <th>RTE1888 Ours + guide Mean</th>
+      <th>RTE1888 Ours + guide Best</th>
+      <th>RTE1888 DC-OPF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PF convergence (%)</td>
+      <td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td>
+      <td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td>
+    </tr>
+    <tr>
+      <td><i>Q<sub>g</sub></i> violation</td>
+      <td>2.748</td><td>2.641</td><td>1.926</td><td>2.295</td><td>1.715</td><td>139.648</td>
+      <td>3.500</td><td>0.500</td><td>0.269</td><td>0.482</td><td>0.251</td><td>43.014</td>
+    </tr>
+    <tr>
+      <td>Slack <i>P<sub>g</sub></i> violation</td>
+      <td>1.344</td><td>1.518</td><td>0.429</td><td>1.518</td><td>0.408</td><td>15.924</td>
+      <td>3.368</td><td>1.684</td><td>0.123</td><td>1.662</td><td>0.111</td><td>0.120</td>
+    </tr>
+    <tr>
+      <td>Voltage violation</td>
+      <td>0.0321</td><td>0.00193</td><td>0.000255</td><td>0.00193</td><td>0.000220</td><td>0.00687</td>
+      <td>0.0384</td><td>0.0122</td><td>0.00344</td><td>0.0122</td><td>0.00343</td><td>4.431</td>
+    </tr>
+    <tr>
+      <td>Thermal violation</td>
+      <td>0.500</td><td>0.545</td><td>0.280</td><td>0.541</td><td>0.297</td><td>3.763</td>
+      <td>1.139</td><td>2.423</td><td>0.261</td><td>2.418</td><td>0.252</td><td>24.783</td>
+    </tr>
+  </tbody>
+</table>
