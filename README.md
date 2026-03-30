@@ -31,7 +31,7 @@
 </p>
 
 ---
-<p align="center" style="font-size:13px; color:#444;">
+<p align="center" style="font-size:11px; color:#444;">
   <b>Table 1.</b>
   Per-target MAE (↓) across test systems, including voltage magnitude <i>V</i>, voltage angle θ, active power <i>P<sub>g</sub></i>, and reactive power <i>Q<sub>g</sub></i>.
   For our method, both mean and Best@K results are reported. Best@K is selected via a rank-sum criterion over all reported quantities, and this definition applies throughout.
