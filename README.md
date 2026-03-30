@@ -30,44 +30,51 @@
     Such behavior is less apparent in smaller systems, possibly due to reduced degrees of freedom and simpler constraint structure.
 </p>
 
-<p align="center" style="font-size:14px; color:#444;">
+---
+<p align="center" style="font-size:13px; color:#444;">
 <b>Table 1.</b>
 Per-target MAE (↓) across test systems, including voltage magnitude <i>V</i>, voltage angle θ, active power <i>P<sub>g</sub></i>, and reactive power <i>Q<sub>g</sub></i>.
-For our method, both mean and Best@K results are reported. Best@K is selected via a rank-sum criterion over all quantities.
+For our method, both mean and Best@K results are reported. Best@K is selected via a rank-sum criterion over all reported quantities, and this definition applies throughout.
 </p>
 
 <table align="center">
-<tr>
-  <th rowspan="2">Metric</th>
-  <th colspan="6">PEGASE1354 (×10⁻²)</th>
-  <th colspan="6">RTE1888</th>
-</tr>
-<tr>
-  <th>GNN</th><th>GNN+Const</th><th>Ours M</th><th>Ours B</th><th>Guide M</th><th>Guide B</th>
-  <th>GNN</th><th>GNN+Const</th><th>Ours M</th><th>Ours B</th><th>Guide M</th><th>Guide B</th>
-</tr>
-
-<tr>
-<td>V</td>
-<td>0.227</td><td>0.242</td><td>0.201</td><td>0.130</td><td>0.201</td><td>0.130</td>
-<td>0.00212</td><td>0.00433</td><td>0.00251</td><td>0.00103</td><td>0.00251</td><td>0.00102</td>
-</tr>
-
-<tr>
-<td>θ</td>
-<td>0.705</td><td>0.849</td><td>0.867</td><td>0.559</td><td>0.867</td><td>0.559</td>
-<td>0.0531</td><td>0.1289</td><td>0.1098</td><td>0.0132</td><td>0.1100</td><td>0.0131</td>
-</tr>
-
-<tr>
-<td>P<sub>g</sub></td>
-<td>2.621</td><td>4.388</td><td>2.368</td><td>1.609</td><td>2.368</td><td>1.609</td>
-<td>0.121</td><td>0.269</td><td>0.225</td><td>0.0321</td><td>0.225</td><td>0.0320</td>
-</tr>
-
-<tr>
-<td>Q<sub>g</sub></td>
-<td>5.369</td><td>6.997</td><td>5.674</td><td>3.641</td><td>5.674</td><td>3.641</td>
-<td>0.0525</td><td>0.0928</td><td>0.0857</td><td>0.0233</td><td>0.0858</td><td>0.0232</td>
-</tr>
+  <tr>
+    <th rowspan="2"> </th>
+    <th colspan="6">PEGASE1354 × 10<sup>−2</sup></th>
+    <th colspan="6">RTE1888</th>
+  </tr>
+  <tr>
+    <th>GNN</th>
+    <th>GNN + Constraint</th>
+    <th>Ours Mean</th>
+    <th>Ours Best</th>
+    <th>Ours + guide Mean</th>
+    <th>Ours + guide Best</th>
+    <th>GNN</th>
+    <th>GNN + Constraint</th>
+    <th>Ours Mean</th>
+    <th>Ours Best</th>
+    <th>Ours + guide Mean</th>
+    <th>Ours + guide Best</th>
+  </tr>
+  <tr>
+    <td><i>V</i></td>
+    <td>0.227</td><td>0.242</td><td>0.201</td><td>0.130</td><td>0.201</td><td>0.130</td>
+    <td>0.00212</td><td>0.00433</td><td>0.00251</td><td>0.00103</td><td>0.00251</td><td>0.00102</td>
+  </tr>
+  <tr>
+    <td>θ</td>
+    <td>0.705</td><td>0.849</td><td>0.867</td><td>0.559</td><td>0.867</td><td>0.559</td>
+    <td>0.0531</td><td>0.1289</td><td>0.1098</td><td>0.0132</td><td>0.1100</td><td>0.0131</td>
+  </tr>
+  <tr>
+    <td><i>P<sub>g</sub></i></td>
+    <td>2.621</td><td>4.388</td><td>2.368</td><td>1.609</td><td>2.368</td><td>1.609</td>
+    <td>0.121</td><td>0.269</td><td>0.225</td><td>0.0321</td><td>0.225</td><td>0.0320</td>
+  </tr>
+  <tr>
+    <td><i>Q<sub>g</sub></i></td>
+    <td>5.369</td><td>6.997</td><td>5.674</td><td>3.641</td><td>5.674</td><td>3.641</td>
+    <td>0.0525</td><td>0.0928</td><td>0.0857</td><td>0.0233</td><td>0.0858</td><td>0.0232</td>
+  </tr>
 </table>
