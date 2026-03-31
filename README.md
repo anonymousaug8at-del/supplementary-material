@@ -32,7 +32,7 @@
 </p>
 
 ---
-![Table](figs/t1.PNG)
+<img src="figs/t1.PNG" style="width:80%;">
 <br>
 <br>
 ![Table](figs/t2.PNG)
