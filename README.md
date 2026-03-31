@@ -8,7 +8,7 @@
   <b>Figure 1.</b>
   AC-IPOPT solve time distributions across power systems of increasing size.
   Each half-violin shows per-instance runtimes, capturing central tendency and tail behavior.
-  Red markers indicate deterministic inference time of our method.
+  Black markers indicate deterministic inference time of our method.
 </p>
 
 <table align="center">
