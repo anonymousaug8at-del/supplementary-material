@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-  <img src="figs/ridgeline_pg_hist.png" width="45%">
-  <img src="figs/ridgeline_qg_hist.png" width="45%">
+  <img src="figs/ridgeline_pg_hist.png" width="35%">
+  <img src="figs/ridgeline_qg_hist.png" width="35%">
 </p>
 
 <p align="center" style="font-size:13px;">
