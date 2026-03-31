@@ -14,11 +14,11 @@
 <table align="center">
   <tr>
     <td align="center">
-      <img src="figs/ridgeline_pg_hist.png" width="100%">
+      <img src="figs/ridgeline_pg_hist.png" width="80%">
       <div style="font-size:13px;">(a) Active Power</div>
     </td>
     <td align="center">
-      <img src="figs/ridgeline_qg_hist.png" width="100%">
+      <img src="figs/ridgeline_qg_hist.png" width="80%">
       <div style="font-size:13px;">(b) Reactive Power</div>
     </td>
   </tr>
