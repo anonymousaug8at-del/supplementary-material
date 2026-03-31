@@ -32,10 +32,16 @@
 </p>
 
 ---
-<img src="figs/t1.PNG" style="width:80%;">
+<p align="center">
+  <img src="figs/t1.PNG" style="width:60%;">
+</p>
 <br>
 <br>
-![Table](figs/t2.PNG)
+<p align="center">
+  <img src="figs/t2.PNG" style="width:60%;">
+</p>
 <br>
 <br>
-![Table](figs/t3.PNG)
+<p align="center">
+  <img src="figs/t3.PNG" style="width:60%;">
+</p>
