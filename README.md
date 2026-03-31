@@ -12,15 +12,12 @@
 </p>
 
 <p align="center">
-  <span>
-    <img src="figs/ridgeline_pg_hist.png" style="width:3%;"><br>
-    <span style="font-size:13px;">(a) Active Power</span>
-  </span>
-  &nbsp;&nbsp;
-  <span>
-    <img src="figs/ridgeline_qg_hist.png" style="width:3%;"><br>
-    <span style="font-size:13px;">(b) Reactive Power</span>
-  </span>
+  <img src="figs/ridgeline_pg_hist.png" width="45%">
+  <img src="figs/ridgeline_qg_hist.png" width="45%">
+</p>
+
+<p align="center" style="font-size:13px;">
+  (a) Active Power &nbsp;&nbsp;&nbsp;&nbsp; (b) Reactive Power
 </p>
 
 <p align="center" style="font-size:10px; color:#444;">
