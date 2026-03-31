@@ -11,14 +11,18 @@
   Red markers indicate deterministic inference time of our method.
 </p>
 
-<p align="center">
-  <img src="figs/ridgeline_pg_hist.png" width="35%">
-  <img src="figs/ridgeline_qg_hist.png" width="35%">
-</p>
-
-<p align="center" style="font-size:13px;">
-  (a) Active Power &nbsp;&nbsp;&nbsp;&nbsp; (b) Reactive Power
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="figs/ridgeline_pg_hist.png" width="100%">
+      <div style="font-size:13px;">(a) Active Power</div>
+    </td>
+    <td align="center">
+      <img src="figs/ridgeline_qg_hist.png" width="100%">
+      <div style="font-size:13px;">(b) Reactive Power</div>
+    </td>
+  </tr>
+</table>
 
 <p align="center" style="font-size:10px; color:#444;">
   <b>Figure 1.</b>
