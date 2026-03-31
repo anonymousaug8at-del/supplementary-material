@@ -31,6 +31,6 @@
 </p>
 
 ---
-![Table](t1.PNG)
-![Table](t2.PNG)
-![Table](t3.PNG)
+![Table](figs/t1.PNG)
+![Table](figs/t2.PNG)
+![Table](figs/t3.PNG)
